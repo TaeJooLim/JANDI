@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<link rel="stylesheet" href="../../css/reset.css" />
+<link rel="stylesheet" href="../../css/common.css" />
+<script src="https://kit.fontawesome.com/1bae5590a0.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+    img {
+        width: 100px;
+        height: 100px;
+        background-color: #CCC;
+        border-radius: 50%;
+    }
+
+    .tbl_1, .tbl_1_thead, .tbl_1 tbody tr, .tbl_1 tbody tr td {
+        border: 1px solid #CCC;
+    }
+</style>
+<body>
+    <div class="page_wrap p_30">
+        <div class="header_wrap m_b30">
+            <div class="title_wrap m_b30 flex flex_vc flex_hc">
+                <h1 class="">회원가입</h1>
+            </div>
+            <div class="img_wrap flex flex_vc flex_hc">
+                <img src="../../img/profile.png" />
+                <i class="fas fa-camera"></i>
+            </div>
+        </div>
+        <!-- ID/PW -->
+        <div class="content_wrap">
+            <div class="sub_content_wrap m_b30">
+                <div class="sub_title_wrap"></div>
+                <div class="sub_content_wrap">
+                    <table class="tbl_1">
+                        <thead></thead>
+                        <tbody>    
+                            <tr class=""><td><input type="email" class="p_10" placeholder="이메일" /></td></tr>
+                            <tr class=""><td><input type="password" class="p_10" placeholder="비밀번호" /></td></tr>
+                            <tr class=""><td><input type="password" class="p_10" placeholder="비밀번호 확인" /></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 이름 -->
+            <div class="sub_content_wrap m_b30">
+                <div class="sub_title_wrap m_b5">
+                    <h3>이름</h3>
+                </div>
+                <div class="sub_content_wrap">
+                    <table class="tbl_1">
+                        <thead></thead>
+                        <tbody>    
+                            <tr class=""><td><input type="text" class="p_10" placeholder="이름을(를) 입력하세요" /></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 성별 -->
+            <div class="sub_content_wrap m_b30">
+                <div class="sub_title_wrap m_b5">
+                    <h3>성별</h3>
+                </div>
+                <div class="sub_content_wrap">
+                    <div class="radio_wrap">
+                        <label><input type="radio" name="mem_gender" /> 남자</label>
+                    </div>
+                    <div class="radio_wrap">
+                        <label><input type="radio" name="mem_gender" /> 여자</label>
+                    </div>
+                </div>
+            </div>
+            <!-- 생년월일 -->
+            <div class="sub_content_wrap m_b30">
+                <div class="sub_title_wrap m_b5">
+                    <h3>생년월일</h3>
+                </div>
+                <div class="sub_content_wrap">
+                    <select id="yearSelect">
+                        <option value="">년</option>
+                    </select>
+                    <select id="monthSelect">
+                        <option value="">월</option>
+                    </select>
+                    <select id="dateSelect">
+                        <option value="">일</option>
+                    </select>
+                </div>
+            </div>
+            <!-- 주소 -->
+            <div class="sub_content_wrap m_b30">
+                <div class="sub_title_wrap m_b5">
+                    <h3>주소</h3>
+                </div>
+                <div class="sub_content_wrap">
+                    <table class="tbl_1">
+                        <thead></thead>
+                        <tbody>
+                            <tr class="">
+                                <td><input type="text" class="p_10" placeholder="주소" /></td>
+                                <td><button type="button">검색</button></td>
+                            </tr>
+                            <tr class="">
+                                <td><input type="text" class="p_10" placeholder="상세주소" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 휴대폰번호 -->
+            <div class="sub_content_wrap m_b30">
+                <div class="sub_title_wrap m_b5">
+                    <h3>휴대폰번호</h3>
+                </div>
+                <div class="sub_content_wrap">
+                    <table class="tbl_1">
+                        <thead></thead>
+                        <tbody>
+                            <tr class="">
+                                <td>
+                                    <select class="">
+                                        <option value="010">010</option>
+                                        <option value="010">011</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" class="p_10" placeholder="1234" />
+                                </td>
+                                <td>
+                                    <span>-</span>
+                                </td>
+                                <td>
+                                    <input type="text" class="p_10" placeholder="5678" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 이메일 -->
+            <div class="sub_content_wrap m_b30">
+                <div class="sub_title_wrap m_b5">
+                    <h3>이메일</h3>
+                </div>
+                <div class="sub_content_wrap">
+                    <table class="tbl_1">
+                        <thead></thead>
+                        <tbody>
+                            <tr class="">
+                                <td><input type="text" class="p_10" placeholder="이메일" /></td>
+                                <td><span>@</span></td>
+                                <td>
+                                    <select id="">
+                                        <option value="">선택</option>
+                                        <option value="">naver.com</option>
+                                        <option value="">gmail.com</option>
+                                        <option value="">daum.net</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="btn_wrap">
+                <button type="button" class="bg_green w_100 white">다음</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    window.onload = () => {
+        fn_yearSelect();
+        fn_monthSelect();
+        fn_dateSelect();
+    }
+
+    // 1921 ~ 2021년까지 option 태그 동적생성
+    fn_yearSelect = (e) => {
+        let optionHtml = '';
+        for (let i = 1921; i <= 2021; i++) {
+            optionHtml += '<option value=' + i + '>' + i + '</option>';
+        }
+        //document.getElementById('yearSelect').append(optionHtml);
+        $("#yearSelect").append(optionHtml);
+    }
+
+    // 1 ~ 12월까지 option 태그 동적생성
+    fn_monthSelect = (e) => {
+        let optionHtml = '';
+        for (let i = 1; i <= 12; i++) {
+            optionHtml += '<option value=' + i + '>' + i + '</option>';
+        }
+        $("#monthSelect").append(optionHtml);
+    }
+
+    // 1 ~ 31일까지 option 태그 동적생성
+    fn_dateSelect = (e) => {
+        let optionHtml = '';
+        for (let i = 1; i <= 31; i++) {
+            optionHtml += '<option value=' + i + '>' + i + '</option>';
+        }
+        $("#dateSelect").append(optionHtml);
+    }
+</script>
+</html>

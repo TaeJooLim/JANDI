@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../../css/reset.css" />
+<link rel="stylesheet" href="../../css/common.css" />
+<script src="https://kit.fontawesome.com/1bae5590a0.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<body>
+    <div class="page_wrap">
+        <!--Header 시작-->
+        <div class="header_wrap bg_green w_100">
+            <div class="btn_wrap flex flex_vc space_between p_tb15 p_lr20 white font_24">
+                <div class="home_btn">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+                <div class="title_btn">
+                    <label>공지사항</label>
+                </div>
+                <div class="menu_btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!--Header 끝-->
+
+        <!--글작성 FROM 시작-->
+        <div class="sub_wrap p_20">
+            <div class="sub_wrap flex space_between p_b10">
+                <select name="" id="" class="reg_type">
+                    <option value="">분류</option>
+                    <option value="N01">공지</option>
+                    <option value="N02">공지2</option>
+                </select>
+                <input type="text" class="w_100" placeholder="제목" />
+            </div>
+            <div class="sub_wrap flex p_b10">
+                <div>버튼1</div>
+                <div>버튼2</div>
+                <div>버튼3</div>
+            </div>
+            <div class="sub_wrap p_b10">
+                <textarea class="w_100 p_5" name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="sub_wrap p_b10">
+                <div class="upload_wrap">
+                    <div class="sub_wrap flex space_between flex_vc">
+                        <h4>파일첨부</h4>
+                        <button class="btn_gray">파일 업로드</button>
+                    </div>
+                    <div class="sub_wrap flex flex_vc">파일이 없습니다.</div>
+                </div>
+            </div>
+        </div>
+        <!--글작성 FROM 끝-->
+
+        <!--목록, 글쓰기, 초기화 버튼 시작-->
+        <div class="btn_wrap flex space_between p_20">
+            <button class="btn_gray">목록</button>
+            <div class="sub_wrap">
+                <button class="btn_green">글쓰기</button>
+                <button class="btn_gray">초기화</button>
+            </div>
+        </div>
+        <!--목록, 등록, 초기화 버튼 끝-->
+    </div>
+</body>
+</html>
