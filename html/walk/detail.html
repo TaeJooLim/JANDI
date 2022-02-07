@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../../css/reset.css" />
+<link rel="stylesheet" href="../../css/common.css" />
+<script src="https://kit.fontawesome.com/1bae5590a0.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+    .img_style {
+        width: 70px;
+        height: 70px;
+        background-color: #CCC;
+        border-radius: 50%;
+    }
+
+    .img_wrap { position: relative; width: 100%; height: 250px; } 
+    .img_wrap img { position: absolute; top: 0; left: 0; transform: translate(50, 50); width: 100%; height: 100%; object-fit: cover; margin: auto; }
+
+    .input_01 {
+        border: 1px solid #CCC;
+    }
+</style>
+<body>
+    <div class="page_wrap">
+        <!--Header 시작-->
+        <div class="header_wrap w_100 bd_b1">
+            <div class="btn_wrap flex flex_vc space_between p_tb15 p_lr20 font_24">
+                <div class="home_btn">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+                <div class="title_btn">
+                    <label>놀아주세요</label>
+                </div>
+                <div class="menu_btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!--Header 끝-->
+
+        <!--상세보기 FORM 시작-->
+        <div class="sub_wrap p_20">
+            <div class="sub_wrap p_b10 bd_b1">
+                <div class="sub_wrap img_wrap p_b10">
+                    <img src="../../img/gana.jpg" class="img_h300 w_100" alt="">
+                </div>
+            </div>
+            <div class="sub_wrap bd_b1">
+                <div class="sub_wrap p_tb10 bd_b1">
+                    <h2>강아지이름</h2>
+                    <span>권장산책량 </span>
+                    <span>00분</span>
+                </div>
+                <div class="sub_wrap p_tb10">
+                    <h2>About 가나?</h2>
+                    <span>2014.12.10일에 태어났어요. 겁이 많은 편이지만 사람을 너~무 좋아하고 잘 따라요. 대신 다른 강아지를 보면 많이 짖어요. 산책중에 강아지를 마주치게 되면 가나와 함께 빨리 도망쳐주세요. 쓸개골 탈구로 인해 무릎이 아프니 달리기보다는 걷는 산책이 필요해요. 잘 부탁드립니다.</span>
+                </div>
+            </div>
+            <div class="sub_wrap p_tb10">
+                <div class="sub_wrap flex space_between p_tb10 bd_b1">
+                    <div class="flex flex_vc flex_hc">
+                        <img src="../../img/gana.jpg" class="img_style"/>
+                        <div class="sub_wrap m_l10">
+                            <div class="mem_name">주인이름</div>
+                            <div class="mem_adr">AA구 BB동</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--상세보기 FROM 끝-->
+
+        <!--목록, 글쓰기, 초기화 버튼 시작-->
+        <div class="btn_wrap p_20">
+            <button class="btn_green w_100">놀아주세요</button>
+        </div>
+        <!--목록, 등록, 초기화 버튼 끝-->
+    </div>
+</body>
+</html>

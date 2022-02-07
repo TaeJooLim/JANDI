@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../../css/reset.css" />
+<link rel="stylesheet" href="../../css/common.css" />
+<script src="https://kit.fontawesome.com/1bae5590a0.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+    .img_style {
+        width: 70px;
+        height: 70px;
+        background-color: #CCC;
+        border-radius: 50%;
+    }
+
+    .input_01 {
+        border: 1px solid #CCC;
+    }
+</style>
+<body>
+    <div class="page_wrap">
+        <!--Header 시작-->
+        <div class="header_wrap w_100 bd_b1">
+            <div class="btn_wrap flex flex_vc space_between p_tb15 p_lr20 font_24">
+                <div class="home_btn">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+                <div class="title_btn">
+                    <label>JANDI</label>
+                </div>
+                <div class="menu_btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!--Header 끝-->
+
+        <!--글작성 FROM 시작-->
+        <div class="sub_wrap p_20">
+            <div class="sub_wrap p_b10">
+                <!--강아지 list 반복 시작-->
+                <div class="sub_wrap flex space_between p_tb10 bd_b1">
+                    <div class="flex flex_vc flex_hc">
+                        <img src="../../img/profile.png" class="img_style"/>
+                        <div class="sub_wrap m_l10">
+                            <div class="mem_name">강아지이름</div>
+                            <div class="mem_adr">견종 | 나이</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_wrap flex space_between p_tb10 bd_b1">
+                    <div class="flex flex_vc flex_hc">
+                        <img src="../../img/profile.png" class="img_style"/>
+                        <div class="sub_wrap m_l10">
+                            <div class="mem_name">강아지이름</div>
+                            <div class="mem_adr">견종 | 나이</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_wrap flex space_between p_tb10 bd_b1">
+                    <div class="flex flex_vc flex_hc">
+                        <img src="../../img/profile.png" class="img_style"/>
+                        <div class="sub_wrap m_l10">
+                            <div class="mem_name">강아지이름</div>
+                            <div class="mem_adr">견종 | 나이</div>
+                        </div>
+                    </div>
+                </div>
+                <!--강아지 list 반복 끝-->
+            </div>
+            <div class="sub_wrap p_b10">
+                <div class="sub_wrap flex space_between p_b10">
+                    <div class="sub_wrap">
+                        <h3>약속장소</h3>
+                        <input type="text" class="p_5 input_01 w_100"></input>
+                    </div>
+                    <div class="sub_wrap">
+                        <h3>시간</h3>
+                        <input type="time" class="p_5 input_01 w_100"></input>
+                    </div>
+                </div>
+                <div class="sub_wrap">
+                    <h3>부탁드려요</h3>
+                    <textarea class="w_100 p_5" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+        <!--글작성 FROM 끝-->
+
+        <!--목록, 글쓰기, 초기화 버튼 시작-->
+        <div class="btn_wrap p_20">
+            <button class="btn_green w_100">등록</button>
+        </div>
+        <!--목록, 등록, 초기화 버튼 끝-->
+    </div>
+</body>
+</html>
