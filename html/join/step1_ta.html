@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common.css"/>
+    <title>회원가입</title>
+</head>
+<style>
+    div, title, input[type="text"], input[type="number"], input[type="password"], input[type="email"], input[type="date"], button {
+        width: 100%;
+        
+    }
+    h1 {
+        text-align: center;
+    }
+    body {
+        padding: 10px 20px;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+        background-color: gray;
+        border-radius: 50%;
+    }
+    input[type="text"], input[type="number"], input[type="password"], input[type="email"], input[type="date"] {
+        outline: 1px solid #D8D8D8;
+        border: 0px;
+        height: 35px;
+    }
+    .content_wrap h3 {
+        color: #777777;
+    }
+
+</style>
+<body>
+    <div class="page_wrap">
+        <div class="header_wrap">
+            <div class="title_wrap">
+                <div class="noto font_20 v_middle gray center p_b20">회원가입</div>
+            </div>
+            <div class="img_wrap flex flex_hc p_b20">
+                <img src="image/profile.png" />
+            </div>
+        </div>
+        <div class="content_wrap">
+            <div class="sub_content_wrap">
+                <div class="sub_title_wrap"></div>
+                <div class="sub_content_wrap">
+                    <input type="email" placeholder="이메일" />
+                    <input type="password" placeholder="비밀번호" />
+                    <input type="password" placeholder="비밀번호 확인" />
+                </div>
+            </div>
+            <div class="sub_content_wrap">
+                <div class="sub_title_wrap">
+                    <h3>이름</h3>
+                </div>
+                <div class="sub_content_wrap">
+                    <input type="text" placeholder="이름을(를) 입력하세요" />
+                </div>
+            </div>
+            <div class="sub_content_wrap">
+                <div class="sub_title_wrap">
+                    <h3>성별</h3>
+                </div>
+                <div class="sub_content_wrap">
+                    <div class="radio_wrap">
+                        
+                        <label><input type="radio" name="mem_gender" />남자</label>
+                    </div>
+                    <div class="radio_wrap">
+                        
+                        <label><input type="radio" name="mem_gender" />여자</label>
+                    </div>
+                </div>
+            </div>
+            <div class="sub_content_wrap">
+                <div class="sub_title_wrap">
+                    <h3>생년월일</h3>
+                </div>
+                <div class="sub_content_wrap">
+                    <input type="number" max="2099" min="1900" value="연도" />
+                    <input type="number" max="2099" min="1900" value="월"/>
+                    <input type="date" max="2099" min="1900" />
+                </div>
+            </div>
+            <div class="btn_wrap">
+                <button type="button">다음</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
